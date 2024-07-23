@@ -1,0 +1,1137 @@
+
+
+.watsqr-code{
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    background: rgb(88, 101, 115);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    display: none;
+    animation: aminate;
+    animation-duration: 0.6s;
+}
+.watsqr-code.active{
+    display: block;
+}
+.watsqr-code .close-btn{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background: var(--text-color);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+.watsqr-code .close-btn:hover{
+    background: rgb(198, 101, 101);
+    color: white;
+}
+.watsqr-code .qr-code-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.qr-code-container .code h1{
+    margin: 10px 0;
+    text-align: center;
+}
+.qr-code-container .code{
+    display: flex;
+    flex-direction: column;
+}
+.qr-code-container .code p{
+    color: var(--p-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.qr-code-container .code img{
+    border-radius: 10px;
+}
+.watsqr-code p{
+    color: var(--p-color);
+    margin: 10px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.watsqr-code .propile-pic{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    padding: 10px 4rem;
+    background: var(--bg-color);
+    position: fixed;
+    top: 90px;
+    display: none; 
+}
+.video.active{
+    display: block;
+}
+.back-arrow{
+    position: absolute;
+    top: 2px;
+    background: rgb(137, 134, 134);
+    left: 10px; 
+    font-size: 40px;
+    cursor: pointer;
+    padding: 6px 20px;
+
+}
+.back-arrow:hover{
+    border: 1px solid var(--link-color);
+}
+
+.video-heading{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    flex-direction: column;
+}
+.video-heading h1{
+    color: var(--text-color);
+    font-size: 30px;
+}
+.video-heading p{
+    font-size: 23px;
+    color: var(--p-color);
+}
+.listOfVideos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 10px;
+    overflow: hidden;
+  overflow-y: scroll;
+    height: 500px;
+    padding: 3rem;
+}
+.listOfVideos video{
+    width: 100%;
+    margin: 10px 0;
+    height: 200px;
+
+}
+.listOfVideos .video-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 1px 1px 2px var(--link-color);
+    padding: 4px;
+}
+.listOfVideos .video-details h1{
+    text-transform: uppercase;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.listOfVideos .video-details p{
+    color: var(--p-color);
+
+}
+
+
+
+.explore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: grey ;
+    height: 100vh;
+    position: fixed;
+    top: 65%;
+   left:  50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 4rem;
+    display: none;
+}
+.explore.active{
+    display: block;
+    display: flex;
+
+}
+.explore-container{
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 4rem;
+}
+
+.explore .back{
+     font-size: 35px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.container-heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+    gap: 10px;
+    background: url('./imgs/techcover.avif');
+    background-size: cover;
+    padding: 2rem 0; height: 500px;
+    justify-content: center;
+    
+
+}
+.container-heading h1{
+    color: rgb(226, 218, 154);
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+.container-heading h2{
+    color: rgba(222, 222, 147, 0.5);
+    text-align: center;
+}
+.container-heading p{
+    color: rgb(27, 114, 158);
+    font-size: 20px;
+
+    text-align: center;
+
+}
+.container-heading button{
+    padding: 13px 30px;
+    border: none;
+    background: var(--btn-color);
+    font-size: 20px;
+    color: var(--text-color);
+    letter-spacing: 3px;
+    cursor: pointer;
+
+}
+.container-heading button:hover{
+    border: 1px solid var(--link-color);
+}
+
+.explore-middle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+
+}
+.explore-middle h2{
+    font-size: 35px;
+    color: var(--text-color);
+    letter-spacing: 3px;
+    text-align: center;
+}
+.explore-middle p{
+    color: var(--link-color);
+    font-size: 25px;
+    font-style: italic;
+}
+
+.areasOfFocus{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+.areasOfFocus .card{
+    height: 400px;
+    margin: 10px;
+    width: 320px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.areasOfFocus .card h1, .narrative h1{
+    color: rgb(79, 166, 203);
+    text-shadow: 1px 1px 1px white;
+}
+.areasOfFocus .card p{
+    font-size: 17px;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+
+}
+
+.web{
+    background: url('./imgs/webdevelopment.avif');
+    background-size: cover;
+
+}
+.graph{
+    background: url('./imgs/graphic\ desugning.avif');
+    background-size: cover;
+}
+
+.gui{
+    background: url('./imgs/gui\ desingin.avif');
+    background-size: cover;
+
+}
+.markt{
+    background: url('./imgs/marketing.avif');
+    background-size: cover;
+
+}
+
+.explore-bottom{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.narrative{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 2rem;
+    gap: 2rem;
+   
+}
+.narrative h1{
+    text-transform: capitalize;
+    font-size: 2.4rem;
+}
+.narrative p{
+    line-height: 1.99rem;
+    font-size: 25px;
+    color: var(--p-color);
+}
+.btns button{
+    padding: 13px 35px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background: var(--btn-color);
+    color: var(--text-color);
+    border: none;
+}
+.btns button:hover{
+    border: 1px solid var(--link-color  );
+}
+
+
+
+.moreAbout{
+    position: fixed;
+    top: 100px;
+    background: grey;
+    display: none;
+    
+}
+
+.moreAbout.active{
+    display: block;
+}
+.back-moreabout{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 5px 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.moreAbout img{
+    width: 200px;
+}
+.moreAboutContainer{
+  
+    max-height: 590px ;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 10px 4rem;
+}
+
+.habbies{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.habbies.active{
+    display: block;
+    display: flex;
+}
+.habbies h1, .background-container h1,  
+.education h1, .skills h1{
+    color: var(--text-color);
+    font-size: 35px ;
+    text-align: center;
+    text-transform: capitalize;
+}
+.hobbie-list{
+    display: flex;
+    margin-top: 10px;
+}
+.hobbie-list .card, .write-up, .pro-narrative,
+ .education-background .cards, .education-narrative{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(106, 111, 113);
+    margin: 6px;
+}
+.hobbie-list .card h1, .background-top h1, 
+.education-background h1{
+    color: var(--link-color);
+    font-size: 25px;
+    text-align: end;
+    text-transform: capitalize;
+}
+.hobbie-list .card p, .education-narrative p{
+    color: var(--p-color);
+    margin: 10px 0;
+}
+.hobbie-list .card img{
+    width: 100%; 
+    height: 300px;
+}
+.hobbie-list .card button, .skills-narrative button{
+    padding: 8px 30px;
+    font-size: 20px;
+    border: none;
+  cursor: pointer;
+    background: var(--btn-color);
+    color: var(--text-color);
+}
+
+
+.pro-narrative{
+    display: flex;
+}
+.pro-narrative{
+    flex-direction: row;
+    padding: 2rem;
+}
+.pro-narrative img{
+    flex: 1;
+    height: 300px;
+    border-radius: 10px;
+}
+.pro-narrative .elabration{
+    flex: 1;
+    margin-left: 10px;
+}
+.elabration p{
+    color: var(--p-color);
+    font-size: 20px;
+    line-height: 1.88rem;
+}
+
+.education-background{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.education-background .cards {
+    padding: 10px;
+}
+.education-background .cards img{
+    background: black;
+    box-shadow: 0 2px 2px 6px rgb(78, 76, 76);
+    border-radius: 10px;
+}
+
+.education-narrative{
+    margin: 15px;
+    text-align: center;
+}
+
+
+.education-narrative p{
+    font-size: 20px;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills-container .cards{
+    display: flex;
+    align-items: center;
+
+}
+.skills-container{
+    margin-top: 2rem;
+}
+.skills-container .cards{
+    margin-top: 6px;
+}
+.skills-container .cards img{
+    height: 300px;
+    object-fit: cover;
+}
+.skills-container .cards img, .skills-container .cards .skills-narrative{
+    flex: 1;
+}
+.skills-narrative{
+    background: lightblue;
+    height: 300px ;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.skills-narrative h1{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+.skills-narrative  p{
+text-align: center;
+font-size: 20px;
+line-height: 1.88rem;
+margin: 2rem 6px;
+}
+
+.skills-narrative button{
+    margin-top: 2rem;
+    letter-spacing: 3px;
+}
+.skills-narrative button:hover{
+    background: gray;
+}
+
+.background{
+    display: none;
+
+}
+.background.active{
+    display: block;
+
+}
+.education{
+    display: none;
+
+}
+.education.active{
+    display: block;
+
+}
+.skills{
+
+    display: none;
+}
+.skills.active{
+
+    display: block;
+    display: flex;
+}
+
+
+.project-pop{
+    top: 50%;
+    position: fixed;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: gray;
+   width: 500px;
+   height: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   display: none;
+   animation: popUp;
+   animation-duration: 0.6s;
+}
+.project-pop.active{
+    display: block;
+}
+.pop-cards{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.pop-cards h1{
+    color: var(--text-color);letter-spacing: 3px;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.pop-cards ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.44rem;
+
+}
+.pop-cards ul li a{
+    color: var(--link-color);
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.pop-cards ul li a:hover{
+    background: #b1a8a8;
+    color: black;
+    padding: 2px 10px;
+}
+.back-arrows, .cont-message-back, .gallary-back{
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    font-size: 30px;
+    background: gray;
+    cursor: pointer;
+    padding: 6px 20px;
+}
+.back-arrows:hover, .cont-message-back:hover{
+    border: 1px solid var(--link-color);
+}
+.pop-cards.active{
+    display: block;
+    display: flex;
+}
+
+.constact-message{
+    position: fixed;
+    top: 50%;
+    background: rgb(54, 53, 53);
+    left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 15px;
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   align-items: center;
+   animation: popUp;
+   animation-duration: 0.6s;
+   display: none;
+}
+.constact-message.active{
+    display: block;
+    display: flex;
+}
+.contact-message-container{
+    margin-top: 4rem;
+    background: rgb(177, 175, 175);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.contact-message-container h1{
+    color: var(--text-color);
+    font-size: 25px;
+}
+.contact-message-container span{
+    color: white;
+    font-size: 20px;
+}
+.contact-message-container p{
+    margin-top: 2rem;
+    font-size: 20px;
+    color: white;
+    
+}
+.constact-message button, .errorCatcher button{
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 2rem;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background: var(--btn-color);
+    color: var(--text-color);
+}
+
+
+.errorCatcher{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(241, 237, 237);
+    padding: 10px;
+    width: 500px;
+    height: 350px;
+    border-radius: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+.errorCatcher.active{
+    display: block;
+    display: flex;
+}
+.errorCatcher h1{
+    color: var(--link-color);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.errorCatcher p{
+    color: rgb(208, 85, 85);
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+.errorCatcher h2{
+    margin-bottom: 2rem;
+    color: red;
+    margin-top: 3rem;
+}
+.errorCatcher button{
+    margin-top: 4rem;
+    border: none;
+
+}
+.errorCatcher button:hover{
+    background: black;
+    color: rgb(249, 240, 240);
+}
+
+
+.gallary-pop{
+    position: fixed;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #b1a8a8;
+    padding: 10px 4rem;
+    height: 640px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+.gallary-pop h1{
+    text-align: center;
+}
+.gallary-pop.active{
+    display: block;
+}
+.gallary-container img{
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    margin: 6px;
+}
+.gallary-container, .image-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+@keyframes aminate{
+    from{
+      top:-200px;
+      opacity: .9;
+      
+    
+    }
+    to{
+     top: 400px;
+     opacity: .1;
+ 
+    }
+ 
+     
+   }
+   @keyframes popUp{
+    from{
+      top:-100%;
+      opacity: .9;
+      
+    
+    }
+    to{
+     top: 50%;
+     opacity: .1;
+ 
+    }
+ 
+     
+   }
+
+
+   @media screen and (max-width: 1050px) {
+    .qr-code-container .code img{
+        border-radius: 10px;
+        height: 250px;
+    }
+    .listOfVideos .video-details h1{
+        font-size: 15px;
+    }
+    .explore-container .container-heading h1{
+        text-align: center;
+    }
+    .explore-container .container-heading h2{
+        font-size: 20px;
+    }
+
+   
+    .explore-middle h2{
+        font-size: 20px;
+    }
+    .explore-middle p{
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .areasOfFocus{
+    
+        display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    }
+    .areasOfFocus .card{
+        height: 350px;
+        margin: 5px;
+        width: 300px;
+    }
+    .areasOfFocus .card h1{
+        font-size: 20px;
+    }
+
+   .narrative{
+    margin-top: 1rem;
+   }
+
+    .narrative p{
+        line-height: 1.22rem;
+        font-size: 17px;
+    }
+    .explore-bottom .btns button{
+        padding: 10px 15px;
+        font-size: 15px;
+        margin-bottom: 2rem;
+
+    }
+    .explore-bottom img{
+        width: 250px;
+        flex: none;
+    }
+    .narrative{
+        flex: 1;
+    }
+    .narrative h1{
+        text-transform: capitalize;
+        font-size: 1.4rem;
+    }
+    .explore-bottom{
+    
+        margin-bottom: 4rem;
+       }
+       .moreAboutContainer{
+        padding: 5px 2rem;
+        margin-bottom: 2rem;
+       }
+
+    .hobbie-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 2rem;
+    }
+
+
+    .education-background{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .education-background .cards {
+        padding: 8px;
+    }
+  
+    .education-narrative h1{
+       font-size: 20px;
+        text-align: center;
+    }
+    .education-narrative p{
+        font-size: 17px;
+    }
+
+
+    .skills-narrative h1{
+     
+        font-size: 20px;
+    }
+    .skills-narrative  p{
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.88rem;
+    margin: 1rem 6px;
+    }
+    .skills{
+        margin-top: 2rem;
+
+    }
+    .skills h1{
+        font-size: 24px;
+    }
+    .skills-narrative button{
+        margin-top: 2rem;
+        letter-spacing: 3px;
+    }
+
+    .constact-message{
+        width: 600px;
+        padding: 10px;
+
+    }
+    .contact-message-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow: hidden;
+        height: 200px;
+    }
+    .contact-message-container p{
+        text-align: center;
+        width: 100%;
+    }
+       
+   
+
+ 
+    
+   }
+
+
+   @media screen and (max-width: 750px) {
+    .qr-code-container .code h1{
+        font-size: 17px;
+       }
+       .qr-code-container .code p{
+        font-size: 20px;
+          }
+
+          .listOfVideos{
+            grid-template-columns: repeat(2, 1fr);
+          
+        }
+        .listOfVideos .video-details h1{
+            font-size: 15px;
+        }
+        .listOfVideos .video-details p{
+            font-size: 13px;
+        }
+        .video-heading{
+            margin-top: 2rem;
+        }
+        .video-heading p{
+            font-size: 15px;
+        }
+        .back-arrow{
+            font-size: 20px;
+            padding: 4px 15px;
+        
+        }
+        .video{
+            padding: 4px 2rem;
+        }
+
+
+        .explore-middle h2{
+            font-size: 15px;
+        }
+        .explore-middle p{
+            font-size: 13px;
+        }
+        .areasOfFocus .card{
+            height: 300px;
+            margin: 5px;
+            width: 180px;
+        }
+        .areasOfFocus .card h1{
+            font-size: 17px;
+        }
+        .explore-bottom{
+            flex-direction: column;
+            margin-bottom: 4rem;
+           }
+    
+        .narrative p{
+            line-height: 1.22rem;
+            font-size: 20px;
+        }
+        .btns button{
+            padding: 10px 20px;
+            font-size: 20px;
+    
+        }
+        .background-container .background-top p{
+            font-size: 15px;
+            line-height: 1.55rem;
+
+
+        }
+        .education{
+            margin-top: 2rem;
+        }
+
+        .education h1{
+            font-size: 20px;
+         
+        }
+        
+ 
+    .education-background .cards {
+        padding: 8px;
+    }
+  
+    .education-narrative h1{
+       font-size: 17px;
+        text-align: center;
+    }
+    .education-narrative p{
+        font-size: 15px;
+    }
+    
+
+
+
+
+.hobbie-list .card h1
+{
+    font-size: 20px;
+    text-align: center;
+}
+.hobbie-list .card p{
+   text-align: center;
+}
+
+.hobbie-list .card button{
+    padding: 5px 20px;
+    font-size: 17px;
+  
+}
+.pro-narrative img{
+    flex: none;
+    width: 100px;
+    height: 200px;
+    border-radius: 10px;
+}
+.elabration{
+    flex: 1;
+}
+.elabration p{
+    line-height: 0.77rem;
+}
+
+
+
+.skills-narrative h1{
+     
+    font-size: 17px;
+}
+.skills-narrative  p{
+text-align: center;
+font-size: 15px;
+line-height: 1.44rem;
+margin: 1rem 6px;
+}
+
+.skills-narrative button{
+    margin-top: 1rem;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+.skills{
+    margin-bottom: 4rem;
+
+}
+
+.constact-message{
+    width: 500px;
+    padding: 10px;
+
+}
+.contact-message-container p{
+    text-align: center;
+    width: 100%;
+}
+
+
+.errorCatcher{
+    width: 400px;
+    height: 300px;
+}
+.errorCatcher p{
+    font-size: 15px;
+}
+
+    
+   }
+   @media screen and (max-width: 500px) {
+    .qr-code-container .code img{
+        border-radius: 10px;
+        height: 200px;
+    }
+
+    .watsqr-code{
+        width: 100%;
+   
+        top: 350px;
+    }
+
+    .qr-code-container .code p{
+     font-size: 20px;
+       }
+       .qr-code-container .code h1{
+        font-size: 15px;
+       }
+       .listOfVideos{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+      
+    }
+    .hobbie-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 2rem;
+    }
+    .education-background{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .constact-message{
+        width: 400px;
+        padding: 10px;
+        border-radius: 10px;
+    
+    }
+ 
+    
+   }
+  
