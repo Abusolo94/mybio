@@ -361,7 +361,7 @@
 }
 .moreAboutContainer{
   
-    max-height: 590px ;
+    height: 120vh;
     overflow: hidden;
     overflow-y: scroll;
     padding: 10px 4rem;
@@ -1131,7 +1131,157 @@ margin: 1rem 6px;
         border-radius: 10px;
     
     }
+
+    
+.project-pop{
+   width: 300px;
+   height: 400px;
+   left: 220px;
+
+}
  
     
+   }
+
+   @media screen and (max-width: 450px){
+    
+.watsqr-code{
+    width: 400px;
+    padding:  5px 4rem;
+}
+.video{
+
+    padding: 4px 5rem;
+    height: 100vh;
+}
+.back-arrow{
+    left: 6rem;
+}
+.listOfVideos{
+    height: 730px;
+   
+}
+
+.explore{
+    height: 100vh;
+    top: 495px;
+   left:  50%;
+   width: 100%;
+
+  
+}
+.explore-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-right: 5rem;
+   
+}
+.explore-container{
+    left: 30%;
+    align-items: center;
+ 
+    padding: 4px 2rem;
+}
+
+.errorCatcher{
+    width: 330px;
+    height: 300px;
+    left: 220px;
+}
+
+.constact-message{
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    left: 220px;
+
+}
+.gallary-container{
+ width: 100vw;
+}
+
+.gallary-pop{
+    top: 490px;
+    height: 100vh;
+    width: 100%;
+
+    
+}
+.gallary-pop h1{
+    text-align: center;
+}
+.gallary-pop.active{
+    display: block;
+}
+.gallary-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 6px;
+
+}
+.gallary-container .image-list{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   width: 100%;
+   gap: 1.88rem;
+  
+   align-items: center;
+   justify-content: center;
+   margin-right: 5.77rem;
+
+ 
+}
+.gallary-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 6px;
+
+
+}
+.moreAbout{
+    top: 60px;
+    height: 130vh;
+}
+.back-moreabout{
+    left: 6rem;
+}
+.moreAboutContainer{
+    height: 100%;
+    margin-top: 1rem;
+}
+
+.habbies{
+    padding: 4px 4rem;
+}
+.hobbie-list{
+    height: 800px;
+    padding: 0 2rem;
+}
+
+.background-container{
+    padding: 3px 4rem;
+}
+.background{
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+.education{
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+}
+.education-background{
+    padding: 3px 4rem;
+}
+.skills{
+    padding: 0 1rem;
+}
+.skills-container{
+    padding: 3px 4rem;
+}
+     
    }
   

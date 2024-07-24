@@ -230,14 +230,14 @@ function renderingTextMessage(message){
         messageContainer.innerHTML = `
         <h1>My name is <span>${message.fname} ${message.sname}</span></h1>
                       <h1>My number is: <span>${message.fnumber}</span></h1>
-                      <p>${message.tmessage}</p>
+                      <textarea>${message.tmessage}</textarea>
       
       `
 
 }
 confirmBtnEl.addEventListener('click', ()=>{
     contactPopUpMessage.classList.remove('active')
-    errorMessage('WOOW!!!', 'thanks your message is send')
+    errorMessage('WOOW!!!', 'thanks your message is sent')
 
 })
 
